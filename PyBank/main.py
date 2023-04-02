@@ -4,8 +4,7 @@ import csv
 osdirectory = os.getcwd()
 budget_data_csv = os.path.join(osdirectory,"PyBank","Resources","budget_data.csv")
 
-# Variables to be define per challenge
-
+# INITIAL VARIABLE CONFIG
 total_mo = 0
 net_total = 0
 prev_profit = 0
