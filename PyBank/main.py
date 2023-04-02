@@ -1,13 +1,3 @@
-# python-challenge
- *PyBank and PyPoll*   RICE_RDA_AlbertoPonce
-
-## PyBank Challenge
-
-***Intent***: Provide quick financial analysis by reading into csv's, performing loops to analyze and extract data into terminal and a .txt file. 
-
-###### Proposed Code for the challenge
-
-```python
 import os
 import csv
 
@@ -80,38 +70,3 @@ with open(printPyBank, 'w') as outfile:
     outfile.write(summary_tot + "\n")
     outfile.write(summary_grti + "\n")
     outfile.write(summary_grtd + "\n")
-```
-
- ###### Tweaks, personalization to challenge
-
-- added ***os.getcwd()*** to obtain the file's true directory. Path in solved exercises were unable to read the file due to having the directory as a root folder higher up. 
-- formatted the totals and added tabs to the print results  for better readability 
-
-*Original Requested format*
-
-```text
-Financial Analysis
-----------------------------
-Total Months: 86
-Total: $22564198
-Average Change: $-8311.11
-Greatest Increase in Profits: Aug-16 ($1862002)
-Greatest Decrease in Profits: Feb-14 ($-1825558)
-```
-
-***Proposed Format*** 
-
-```text
-Financial Analysis
------------------------------
-Total Months:                   86
-Total:                          $22,564,198
-Average Change:                 $-8,311.11
-Greatest Increase in Profits:   16-Aug $1,862,002
-Greatest Decrease in Profits:   14-Feb $-1,825,558
-```
-
-
-
-## PyPoll Challenge
-
