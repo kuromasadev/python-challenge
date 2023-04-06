@@ -60,12 +60,13 @@ print(summary_grti)
 print(summary_grtd)
 
 # saving file to txt
-printPyBank = os.path.join(osdirectory,"PyBank", "Analysis", "Financial_Analysis.txt")
+printPyBank = os.path.join(osdirectory,"PyBank", "analysis", "Financial_Analysis.txt")
 
 with open(printPyBank, 'w') as outfile:
     outfile.write(summary_title + "\n")
     outfile.write("-----------------------------\n")
     outfile.write(summary_mo + "\n")
     outfile.write(summary_tot + "\n")
+    outfile.write(summary_avg + "\n")
     outfile.write(summary_grti + "\n")
     outfile.write(summary_grtd + "\n")
